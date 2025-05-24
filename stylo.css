@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #3A5349;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3em;
+}
+
+h2 {
+    font-weight: 350;
+    font-size: 2.5em;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 30px;
+
+}
+
+header {
+    background-image: url("img/porfolio-portada.jpg");
+    height: 100vh;
+}
+
+.menu-home {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    padding: 10px;
+    max-width: 300px;
+
+}
+
+/* Alineación izquierda de los textos */
+.menu-home h1,
+.menu-home h2,
+.menu-home nav li {
+    text-align: left;
+}
+
+/* Estilo de los encabezados */
+.menu-home h1,
+.menu-home h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.menu-home h2 {
+    margin-bottom: 8px;
+    /* Separación del nav */
+}
+
+/* Lista sin estilos por defecto */
+.menu-home nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos de lista con espaciado */
+.menu-home nav li {
+    margin-bottom: 6px;
+    cursor: pointer;
+    color: #222;
+    /* o el color que prefieras */
+}
+
+/* Opcional: estilo al pasar el mouse */
+.menu-home nav li:hover {
+    text-decoration: underline;
+}
+
+.fondo {
+    background-image: url("img/proyectos.jpg");
+}
+
+.sobre-mi {
+    background-image: url("img/foto-sobre-mi.jpg");
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 70vw;
+}
+
+/* Estilo general para el contenedor */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título del formulario */
+#consulta_form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas */
+#consulta_form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Inputs y textarea */
+#consulta_form input[type="text"],
+#consulta_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#consulta_form input[type="text"]:focus,
+#consulta_form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Botón de enviar */
+#consulta_form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#consulta_form button:hover {
+    background-color: #0056b3;
+}

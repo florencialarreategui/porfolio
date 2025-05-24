@@ -1,38 +1,79 @@
 const root = document.getElementById("root");
-headerHome() 
-headerNav()
-headerImg()
-function headerHome() {
-  const header = document.createElement("header");
-  const texto = document.createElement("h1");
-  texto.textContent= "home"
-  header.classList.add("header");
-  header. appendChild(texto)
-return header
 
-  }
+// function headerHome() {
+//   const header = document.createElement("header");
+//   const florencia = document.createElement("h1");
+//   florencia.textContent = "Florencia";
+//   const larreategui = document.createElement("h2");
+//   larreategui.textContent = "Larreategui";
+//   header.classList.add("header");
+//   header.append(florencia, larreategui);
+//   return header;
+// }
 
-function headerNav(header){
-   const headerNav = document.createElement("nav");
-  headerNav.classList.add("headerNav");
-   const texto = document.createElement("h1");
-  texto.textContent= "nav"
-  header.appendChild(headerNav);
-   header.appendChild(texto);
-}
+// function sectionNav(header) {
+//   const headerNav = document.createElement("nav");
+//   headerNav.classList.add("sectionNav");
+//   const lista = document.createElement("ul");
+//   lista.classList.add("lista");
 
-function headerImg(header) {
-  const headerImg = document.createElement("img");
-  headerImg.src = ".img/3Soñar.png"; 
-   headerImg.alt = "Imagen de portada"; 
-   headerImg.classList.add("headerImg"); 
-    const texto = document.createElement("h1");
-  texto.textContent= "img"
-   header.appendChild(texto);
-  header.appendChild( headerImg);
-}
+//   const itemHome = document.createElement("li");
+//   itemHome.textContent = "Home";
 
-const header = headerHome();  // Primero creamos el header
-headerNav(header);            // Luego lo modificamos con nav
-headerImg(header);            // Y le agregamos la imagen
-root.appendChild(header);
+//   const itemAbout = document.createElement("li");
+//   itemAbout.textContent = "Sobre mi";
+
+//   // Scroll suave a la sección "about"
+//   itemAbout.addEventListener("click", () => {
+//     const aboutSection = document.getElementById("about");
+//     if (aboutSection) {
+//       aboutSection.scrollIntoView({ behavior: "smooth" });
+//     }
+//   });
+
+//   const itemSkils = document.createElement("li");
+//   itemSkils.textContent = "Habilidades";
+
+//   const itemProyects = document.createElement("li");
+//   itemProyects.textContent = "Proyectos y obras";
+
+//   const itemForm = document.createElement("li");
+//   itemForm.textContent = "Contacto";
+
+//   lista.append(itemHome, itemAbout, itemSkils, itemProyects, itemForm);
+//   headerNav.appendChild(lista);
+//   header.appendChild(headerNav);
+// }
+
+// function aboutMe() {
+//   const section = document.createElement("section");
+//   section.id = "about";
+//   const titulo = document.createElement("h2");
+//   titulo.textContent = "Sobre mí";
+//   const parrafo = document.createElement("p");
+//   parrafo.textContent = "Esta es la sección sobre mí.";
+//   section.append(titulo, parrafo);
+//   return section;
+// }
+
+// // Renderizar
+// const header = headerHome();
+// headerNav(header);
+// root.appendChild(header);
+// root.appendChild(aboutMe());
+
+
+// function headerImg(header) {
+//   const headerImg = document.createElement("img");
+//   headerImg.src = "./img/3Soñar.png";
+//   headerImg.alt = "Imagen de portada";
+//   headerImg.classList.add("headerImg");
+//   const texto = document.createElement("h1");
+//   texto.textContent = "img"
+//   header.appendChild(texto);
+//   header.appendChild(headerImg);
+// }
+// document.getElementById("consulta_form").addEventListener("submit", function(e) {
+//   e.preventDefault();
+//   // lógica para enviar o validar el formulario
+// });
